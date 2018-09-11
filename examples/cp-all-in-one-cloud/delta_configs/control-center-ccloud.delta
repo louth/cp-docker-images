@@ -1,0 +1,5 @@
+confluent.controlcenter.streams.ssl.endpoint.identification.algorithm=https
+confluent.controlcenter.streams.sasl.mechanism=PLAIN
+confluent.controlcenter.streams.security.protocol=SASL_SSL
+bootstrap.servers=r0.cp63.us-east-1.aws.confluent.cloud:9092,r0.cp63.us-east-1.aws.confluent.cloud:9093,r0.cp63.us-east-1.aws.confluent.cloud:9094
+confluent.controlcenter.streams.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username\="J5MAQDRK6PGGISC7" password\="uECbjfY6vUbmly8/eqXfoWJxMioyccZ9JKqT+Uuk2sCPpQmxYQQxEFp8ywcFoxXx";

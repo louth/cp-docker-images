@@ -1,0 +1,21 @@
+#Tue Apr 24 14:25:31 EDT 2018
+ssl.endpoint.identification.algorithm=https
+confluent.monitoring.interceptor.ssl.endpoint.identification.algorithm=https
+sasl.mechanism=PLAIN
+confluent.monitoring.interceptor.sasl.mechanism=PLAIN
+request.timeout.ms=20000
+retry.backoff.ms=500
+security.protocol=SASL_SSL
+confluent.monitoring.interceptor.security.protocol=SASL_SSL
+
+# AWS: Confluent Streaming BUS
+bootstrap.servers=r0.cp63.us-east-1.aws.confluent.cloud:9092,r0.cp63.us-east-1.aws.confluent.cloud:9093,r0.cp63.us-east-1.aws.confluent.cloud:9094
+confluent.monitoring.interceptor.bootstrap.servers=r0.cp63.us-east-1.aws.confluent.cloud:9092,r0.cp63.us-east-1.aws.confluent.cloud:9093,r0.cp63.us-east-1.aws.confluent.cloud:9094
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username\="J5MAQDRK6PGGISC7" password\="uECbjfY6vUbmly8/eqXfoWJxMioyccZ9JKqT+Uuk2sCPpQmxYQQxEFp8ywcFoxXx";
+confluent.monitoring.interceptor.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username\="J5MAQDRK6PGGISC7" password\="uECbjfY6vUbmly8/eqXfoWJxMioyccZ9JKqT+Uuk2sCPpQmxYQQxEFp8ywcFoxXx";
+
+# GCP: production
+#bootstrap.servers=pkc-epjoe.us-central1.gcp.confluent.cloud\:9092
+#sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required username\="BZH3RKXXB2PBVFRX" password\="idlfxYGwIt1ruAi5rdFTB13V8rti4SEMna6zw/tjrDUWY3bRrw6kcJrPd1MWO2S0";
+
+interceptor.classes=io.confluent.monitoring.clients.interceptor.MonitoringProducerInterceptor
